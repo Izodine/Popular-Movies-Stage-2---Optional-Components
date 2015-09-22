@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefdff">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="15dp"
+        android:measureWithLargestChild="false"
+        android:background="#cfcfcf">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/view" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsPosterImageView"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:minWidth="185dp"
+            android:minHeight="277dp"
+            android:padding="15dp"
+            android:layout_below="@+id/favoriteCheckBox"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/detailsTitleTextView"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic"
+            android:typeface="sans"
+            android:textSize="40sp"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/detailsSynopsisTextView"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:layout_below="@+id/detailsUserRatingTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/detailsUserRatingTextView"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:layout_below="@+id/detailsPosterImageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/detailsReleaseDateView"
+            android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:layout_below="@+id/detailsTitleTextView"
+            android:gravity="center_horizontal" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Movie"
+            android:id="@+id/favoriteCheckBox"
+            android:checked="false"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/detailsReleaseDateView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/reviewLabel"
+            android:id="@+id/textView"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/detailsSynopsisTextView"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reviewTableView"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/trailerTableView"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Media"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/reviewTableView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
